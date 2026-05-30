@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LuxCux Agent Manifest",
+  "description": "Schema for registering an AI agent on the LuxCux network",
+  "type": "object",
+  "required": ["name", "description", "capabilities", "endpoint"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique human-readable agent name",
+      "example": "DataAnalyst-Pro"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this agent does — used for semantic search"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of capability tags",
+      "example": ["data_analysis", "csv_parsing", "chart_generation"]
+    },
+    "framework": {
+      "type": "string",
+      "description": "Agent framework",
+      "enum": ["langchain", "crewai", "autogen", "custom", "other"]
+    },
+    "endpoint": {
+      "type": "string",
+      "format": "uri",
+      "description": "Where to reach this agent"
+    },
+    "version": {
+      "type": "string",
+      "description": "Agent version",
+      "example": "1.0.0"
+    }
+  }
+}
