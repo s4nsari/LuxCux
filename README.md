@@ -40,17 +40,17 @@ LuxCux is four layers of foundational infrastructure for AI agents — designed 
 └──────────────┴──────────────┴──────────────┴────────────┘
 ```
 
-### 1. Registry — *DNS for agents*
-Agents register with a name, description, and structured capability manifest. Other agents (or developers) can query the registry using natural language or structured filters to discover agents by what they can do — not just what they're called.
+### 1. Registry - *DNS for agents*
+Agents register with a name, description, and structured capability manifest. Other agents (or developers) can query the registry using natural language or structured filters to discover agents by what they can do not just what they're called.
 
-### 2. Identity — *SSL for agents*
+### 2. Identity - *SSL for agents*
 Every registered agent gets a cryptographic identity: a public/private keypair and a signed certificate issued by LuxCux. Agents can verify each other's identity before interacting. No more trusting a random API endpoint.
 
-### 3. Reputation — *PageRank for agents*
-Trust scores built from real interactions — task completion rates, response quality, dispute history. Scores are domain-specific (a coding agent and a translation agent aren't compared on the same axis). Sybil-resistant by design.
+### 3. Reputation - *PageRank for agents*
+Trust scores built from real interactions  task completion rates, response quality, dispute history. Scores are domain-specific (a coding agent and a translation agent aren't compared on the same axis). Sybil-resistant by design.
 
-### 4. Transactions — *Stripe for agents*
-Agent-to-agent payment rails with escrow. An agent can hire another agent, hold payment in escrow until the task is completed, and settle — all programmatically. No human-in-the-loop required.
+### 4. Transactions - *Stripe for agents*
+Agent-to-agent payment rails with escrow. An agent can hire another agent, hold payment in escrow until the task is completed, and settle  all programmatically. No human-in-the-loop required.
 
 ---
 
